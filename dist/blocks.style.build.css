@@ -1,0 +1,125 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-cgb-block-testing-gutenberg-block {
+  background: orangered;
+  border: 0.2rem solid #292929;
+  color: #292929;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem; }
+
+.cf-articles-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .cf-articles-block.extended-gap {
+    margin-right: -30px;
+    margin-left: -30px; }
+  .cf-articles-block .cf-article-column {
+    -ms-flex: 0 1 33.33%;
+        flex: 0 1 33.33%;
+    overflow: hidden;
+    padding: 15px; }
+    .cf-articles-block .cf-article-column.extended-gap {
+      padding: 30px; }
+    .cf-articles-block .cf-article-column .cf-ab-featured-image {
+      margin-bottom: 0; }
+      .cf-articles-block .cf-article-column .cf-ab-featured-image img {
+        width: 100%;
+        height: auto; }
+    .cf-articles-block .cf-article-column h1 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.4em;
+      margin: 0 0 15px 0; }
+    .cf-articles-block .cf-article-column p,
+    .cf-articles-block .cf-article-column a {
+      margin: 0;
+      padding: 0;
+      line-height: 24px;
+      font-size: 14px; }
+    .cf-articles-block .cf-article-column .cf-ab-link {
+      margin-top: 15px;
+      text-align: center; }
+      .cf-articles-block .cf-article-column .cf-ab-link a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px 15px;
+        background: #0A246A;
+        color: #fff;
+        -webkit-transition: background-color 0.3s ease-in;
+        -o-transition: background-color 0.3s ease-in;
+        transition: background-color 0.3s ease-in; }
+        .cf-articles-block .cf-article-column .cf-ab-link a:hover {
+          background: #1aa1d8; }
+    .cf-articles-block .cf-article-column.one-column {
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%; }
+    .cf-articles-block .cf-article-column.two-columns {
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%; }
+    .cf-articles-block .cf-article-column.three-columns {
+      -ms-flex: 0 1 33.33%;
+          flex: 0 1 33.33%; }
+    .cf-articles-block .cf-article-column.four-columns {
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%; }
+    .cf-articles-block .cf-article-column.five-columns {
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%; }
+    .cf-articles-block .cf-article-column.six-columns {
+      -ms-flex: 0 1 16.66%;
+          flex: 0 1 16.66%; }
+
+@media all and (max-width: 768px) {
+  .cf-articles-block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .cf-articles-block.extended-gap {
+      margin-right: -15px;
+      margin-left: -15px; }
+    .cf-articles-block .cf-article-column {
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+      overflow: hidden;
+      padding: 15px; }
+      .cf-articles-block .cf-article-column.extended-gap {
+        padding: 15px; }
+      .cf-articles-block .cf-article-column.one-column {
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%; }
+      .cf-articles-block .cf-article-column.two-columns {
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%; }
+      .cf-articles-block .cf-article-column.three-columns {
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%; }
+      .cf-articles-block .cf-article-column.four-columns {
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%; }
+      .cf-articles-block .cf-article-column.five-columns {
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%; }
+      .cf-articles-block .cf-article-column.six-columns {
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%; } }
