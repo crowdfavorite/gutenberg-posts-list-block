@@ -68,8 +68,6 @@ class ArticlesComponent extends Component {
 	}
 
 	componentDidMount() {
-		console.log('triggered');
-
 		if (!this.props.attributes.categories) {
 			wp.apiFetch({
 				path: '/wp/v2/categories'
@@ -87,8 +85,6 @@ class ArticlesComponent extends Component {
 
 
 	render() {
-		console.log(this.props.attributes);
-
 		const CategoriesSelect = () => {
 			return <select className="cf-block-category components-text-control__input"
 			               value={this.props.attributes.category ? this.props.attributes.category : ''}
@@ -115,12 +111,12 @@ class ArticlesComponent extends Component {
 
 							const FeaturedImage = () => {
 								return <div className='cf-ab-featured-image'><img
-									src={article.featured_image_url.thumbnail} alt={article.title.rendered}/></div>;
+									src={article.featured_image_url.medium} alt={article.title.rendered}/></div>;
 							};
 
 							const Title = () => {
-								return <div className='cf-ab-title'><h1
-									key={article.index}>{article.title.rendered}</h1></div>;
+								return <div className='cf-ab-title'><h3
+									key={article.index}>{article.title.rendered}</h3></div>;
 							}
 
 							const Excerpt = () => {
@@ -220,8 +216,23 @@ class ArticlesComponent extends Component {
 						</div>
 					</div>
 				</PanelBody>
+
+				<PanelBody title={'Box Setup'} initialOpen={false}>
+					<div className="components-base-control">
+						<div className="components-base-control__field">
+							<label className="components-base-control__label" >
+								Button Text
+							</label>
+							<input type='text' name="link_text"
+							       className="components-text-control__input"
+							       onChange={this.handleChange}
+							       value={this.props.attributes.link_text} />
+						</div>
+					</div>
+				</PanelBody>
+
 			</InspectorControls>,
-			<div>
+			<div className='cf_articles_wrapper'>
 				<ArticlesList/>
 			</div>
 		]

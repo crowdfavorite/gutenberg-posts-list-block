@@ -35,7 +35,8 @@
 		}
 		
 		.cf-ab-featured-image {
-			margin-bottom: 0;
+			line-height: 0;
+			margin-bottom: 15px;
 			
 			img {
 				width: 100%;
@@ -43,9 +44,9 @@
 			}
 		}
 		
-		h1 {
-			font-weight: 500;
-			font-size: 24px;
+		h3 {
+			font-weight: 700;
+			font-size: 22px;
 			line-height: 1.4em;
 			margin: 0 0 15px 0;
 		}
